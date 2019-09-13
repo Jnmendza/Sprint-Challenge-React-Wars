@@ -21,7 +21,7 @@ const PeopleGrid = () => {
             // console.log("Testing", peeps);
             setPeopleState(PeopleArr)
         })
-    })
+    }, []);
 
     return (
         <CardContainer className="card-container">
