@@ -1,7 +1,8 @@
-import React, { useState } from "react";
-import { people } from "../data";
+import React, { useState, useEffect } from "react";
+// import { people } from "../data";
 import PeopleCard from "./PeopleCard";
 import styled from "styled-components";
+import axios from "axios";
 
 const CardContainer = styled.div`
     display: flex;
@@ -9,8 +10,18 @@ const CardContainer = styled.div`
 `;
 
 const PeopleGrid = () => {
-    const [peopleState] = useState(people);
+    const [peopleState, setPeopleState] = useState([]);
     console.log(peopleState)
+
+    useEffect(() => {
+        axios
+        .get('https://swapi.co/api/people/')
+        .then(response => {
+            const PeopleArr = response.data.results;
+            // console.log("Testing", peeps);
+            setPeopleState(PeopleArr)
+        })
+    })
 
     return (
         <CardContainer className="card-container">

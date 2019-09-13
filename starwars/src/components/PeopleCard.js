@@ -7,10 +7,11 @@ const Cards = styled.div`
     width: 30%;
     margin: 20px auto;
     color: white;
+    box-shadow: 10px 10px 20px black;
 `;
 
 const Name = styled.h1`
-    background: black;
+    background: rgba(0, 0, 0, 0.7);
     color: white;
 `;
 
