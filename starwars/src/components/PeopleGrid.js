@@ -5,6 +5,7 @@ import styled from "styled-components";
 
 const CardContainer = styled.div`
     display: flex;
+    flex-wrap: wrap;
 `;
 
 const PeopleGrid = () => {
@@ -12,7 +13,7 @@ const PeopleGrid = () => {
     console.log(peopleState)
 
     return (
-        <div className="card-container">
+        <CardContainer className="card-container">
             {peopleState.map((key) =>(
                 <PeopleCard 
                 key={key}
@@ -23,7 +24,7 @@ const PeopleGrid = () => {
                 />
             ))}    
 
-        </div>
+        </CardContainer>
     )
 };
 
