@@ -1,3 +1,4 @@
+Initial Commit
 # Sprint Challenge: React - Star Wars
 
 This challenge allows you to practice the concepts and techniques learned over the past Sprint and apply them in a concrete project. This Sprint explored ReactJS, Function Components, component state and side effects. In your challenge for this Sprint, you will demonstrate proficiency by creating an application that uses ReactJS to consume live data retrieved from the World Wide Web and style that data nicely on the page.
@@ -33,6 +34,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 - [ ] Describe props.
 
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
 
 ## Project Set Up
 
