@@ -16,6 +16,7 @@ const Name = styled.h1`
 `;
 
 const PeopleCard = props => {
+    console.log("People card props",props)
     return (
         <Cards className="cards">
             <Name>{props.name}</Name>

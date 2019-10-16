@@ -25,13 +25,13 @@ const PeopleGrid = () => {
 
     return (
         <CardContainer className="card-container">
-            {peopleState.map((key) =>(
+            {peopleState.map((item,key) =>(
                 <PeopleCard 
                 key={key}
-                name={key.name}
-                mass={key.mass}
-                height={key.height}
-                birth_year={key.birth_year}
+                name={item.name}
+                mass={item.mass}
+                height={item.height}
+                birth_year={item.birth_year}
                 />
             ))}    
 
